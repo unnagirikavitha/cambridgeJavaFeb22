@@ -1,3 +1,21 @@
+Lab 1- 
+	class Lab1
+		{
+		 public static void main(String[] args) {
+				String firstname ="Vaishali";
+				String lastname = "Tapaswi";
+				String name = firstname + "  " + lastname;
+				System.out.println("Hello World - Lab1");
+				System.out.println(name);
+			}
+		}
+
+	repeat the code
+	
+	Lab2 --> create two variables -> one string (name) and int (marks)
+		intiailze it to yourname and marks as 55
+		print the details
+-------------------
 Development
 
 1. Rich Client
