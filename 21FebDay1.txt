@@ -1,3 +1,23 @@
+Lab 7 - while 
+public class Lab7{
+
+     public static void main(String []args){
+	int count = 20;
+	while(count > 10){
+		System.out.println("count is less than 10");
+		// count = count  - 1 
+		count--;
+	}
+}
+}
+---------------------------
+Lab 6 - For 
+	int count = 13;
+    	System.out.println("Current Value = " + count);
+	for(int i = 0; i< count;i++){
+		System.out.println("Current i = "+ i);
+	}
+---------------------------
 Lab 5 - switch case (https://www.w3schools.com/java/java_switch.asp)
 	initialize a string variable and based on length of that string show message and small name. big name (if else) (if length >5 big else small)
 	initialize a string variable and based on length of that string show message and small name. mid size, big name, biggest (switch)
