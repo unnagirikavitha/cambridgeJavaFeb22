@@ -1,3 +1,11 @@
+Lab 5 - switch case (https://www.w3schools.com/java/java_switch.asp)
+	initialize a string variable and based on length of that string show message and small name. big name (if else) (if length >5 big else small)
+	initialize a string variable and based on length of that string show message and small name. mid size, big name, biggest (switch)
+				0..5 -> small name
+				6..10 -> mid
+				11..15 -> big name
+				>15 -> biggest name
+	
 ----------------------------------------
 Lab 4 - Print odd or even for given number) -> single vs multiple lines
 	public class Lab4{
