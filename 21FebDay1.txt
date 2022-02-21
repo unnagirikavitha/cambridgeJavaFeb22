@@ -1,3 +1,9 @@
+Lab 9
+	Create a variable sum = 150 and write a while (sum <=200) -> to add 1 in each iteration
+-----------------------------
+Lab 8 - create a varialbe name and assign some value...
+	use for loop to print hello as many times as string length.
+--------------------------
 Lab 7 - while 
 public class Lab7{
 
