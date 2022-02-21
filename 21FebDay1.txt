@@ -4,8 +4,36 @@ Lab 5 - switch case (https://www.w3schools.com/java/java_switch.asp)
 				0..5 -> small name
 				6..10 -> mid
 				11..15 -> big name
-				>15 -> biggest name
+	public class Lab5{
+
+     public static void main(String []args){
+      String name = "aaaaaaa";
 	
+    System.out.println("Length = " + name.length() );
+ 
+	switch (name.length()) {
+	  case 1:
+	  case 2:
+	  case 3:
+	  case 4: 
+	  case 5:
+	    System.out.println("Length is less than or equal to 5 which means small name ");
+	    break;
+	  case 6:
+	  case 7:
+	  case 8:
+	  case 9:
+	  case 10:
+		    System.out.println("Lenght is greater than 5 and less than or equal to 10, which means mid size name");
+	    break;
+	}
+	//--------------------------------------------
+	if (name.length() <= 5)
+		  System.out.println("Length is less than or equal to 5 which means small name ");
+	else if (name.length() <= 10)
+		 System.out.println("Lenght is greater than 5 and less than or equal to 10, which means mid size name"); 
+	}
+	}
 ----------------------------------------
 Lab 4 - Print odd or even for given number) -> single vs multiple lines
 	public class Lab4{
