@@ -1,5 +1,17 @@
-Lab 4 - Print odd or even for given number)
+----------------------------------------
+Lab 4 - Print odd or even for given number) -> single vs multiple lines
+	public class Lab4{
 
+	     public static void main(String []args){
+		int num= 20;
+		if ((num%2)==0){
+			System.out.println("Number is Even");
+			System.out.println("Some description of even numbers");
+			}
+		else
+			System.out.println("Number is Odd");
+	     }
+	}
 ----------------------------------------
 Conditional Statements (https://www.tutorialspoint.com/compile_java_online.php)
 
