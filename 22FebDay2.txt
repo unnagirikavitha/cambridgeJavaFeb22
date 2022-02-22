@@ -1,0 +1,6 @@
+Lab 1 - 
+  		Scanner scanner = new Scanner(System.in);
+		System.out.print("Please enter your name : ");
+		String name = scanner.next();
+    
+    Accept name and marks from user and show status as pass or fail (pass if marks>=35)
