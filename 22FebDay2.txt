@@ -1,3 +1,15 @@
+Create Product.java
+	-> int prodno, String prodname, String features, double cost
+	-> generate -> constructor with params, getters/setters, toString
+Write ProductCheck.java
+	-> create a instance of Product(with constructor parameter
+	-> invoke toString
+	-> invoke setFeatures to modify features
+	-> invoke toString
+-----------
+	Java Classes and Objects(https://www.w3schools.com/java/java_classes.asp)
+	Attributes, methods, constructors,
+------------------------------------------------------------------
 Lab 5 - Modify Emp.java 
 	in class
 			right click -> source -> generate getters & settter for all three variables
