@@ -1,3 +1,33 @@
+Lab 2- Eclipse
+	Create a new class -> package - maths, class Name - Calc
+	Write a method add in class Calc
+			public int add(int no1, int no2) {
+				return no1+no2;
+			}
+	Create a new class -> package -> defualt, class Name = Lab2
+	Write a main method to invoke add from Calc class
+		import java.util.Scanner;
+		import maths.Calc;
+		public class Lab2 {
+
+			public static void main(String[] args) {
+				Scanner scanner = new Scanner(System.in);
+				System.out.print("Enter Number 1 : ");
+				int no1 = scanner.nextInt();
+				System.out.print("Enter Number 2 : ");
+				int no2 = scanner.nextInt();
+
+				Calc c1 = new Calc();
+				int sum = c1.add(10, 20);
+				System.out.println("Sum of 10 and 20 is " + sum);
+				sum = c1.add(no1,  no2);
+				System.out.println("Sum of " + no1 + " and " + no2 + " is " + sum);
+			}
+		}
+
+	Write one more method - subtract -> accept two input number no1, no2 and return subtraction
+	and invoke it from Lab2
+-----------------------------------
 Lab 1 - 
   		Scanner scanner = new Scanner(System.in);
 		System.out.print("Please enter your name : ");
