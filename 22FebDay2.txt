@@ -1,3 +1,10 @@
+Lab 5 - Modify Emp.java 
+	in class
+			right click -> source -> generate getters & settter for all three variables
+	Modify Lab3.java to add 
+		e1.setEname("Simantini");
+		System.out.println(e1);
+	run ...
 Lab 4 - Write a method in Emp 
 	-> void - no return, ()-> no input parameter
 		public void incrSalary() {
