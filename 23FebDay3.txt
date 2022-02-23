@@ -1,3 +1,82 @@
+Lab 8 - 
+          class Base{
+	public void m1() {
+		System.out.println("Base Method - m1");
+	}
+          }
+          class Derived extends Base{
+	           
+          }
+          public class Lab8 {
+	public static void main(String[] args) {
+		Base b1 =new Base();
+		b1.m1();
+		Derived d1 = new Derived();
+		d1.m1();
+	}
+          ---Check which method is called with you invoke d1.m1()
+          --- override m1 method in Derived class
+          ---Check which method is called with you invoke d1.m1()
+                    
+Lab 7 - Basic inheritance 
+          Write Lab7.java to create Emp, ContractEmp, public Lab7 classes
+           class Emp{
+                    private int empno;
+                    private String ename;
+                    private double salary;
+                    + public getter/setter + toString
+          class ContractEmp extends Emp  {
+	          private String contractcomp;
+	          private String contractperson;
+                    + public getter/setter + toString
+          
+          public class Lab7 {
+
+                    public static void main(String[] args) {
+                              Emp e1 = new Emp();
+                              e1.setEmpno(10);
+                              e1.setEname("AA");
+                              e1.setSalary(1010.10);
+                              System.out.println(e1);
+                              ContractEmp e2 = new ContractEmp();
+                              e2.setEmpno(20);
+                              e2.setEname("BB");
+                              e2.setSalary(2020.20);
+                              e2.setContractcomp("TCS");
+                              e2.setContractperson("Person1");
+                              System.out.println(e2);
+                    }
+          }
+          
+          -> Run
+          -> check e2.set -which methods are shown with extends and without extends
+          
+Assignmnet -  modify 4,5,6 - lab files
+          Create List, Set, Map  
+          add 5 items in each, print
+          remove 1 item from each
+          print 
+---------------------
+Lab 6 - Map
+          import java.util.HashMap;
+          import java.util.Map;
+
+          public class Lab6 {
+
+                    public static void main(String[] args) {
+                                        Map<String, Integer> map = new HashMap<String, Integer>();
+                                        map.put("Seema", 70);
+                                        map.put("Amit", 80);
+                                        map.put("Amin", 82);
+                                        System.out.println(map);
+                                        map.put("Seema",99);
+                                        map.put("Keshor",67);
+                                        System.out.println(map);
+
+                                        System.out.println("Value for Amin is "+ map.get("Amin"));
+                    }
+          }
+
 -----------------> Run Lab4 and Lab5 both with input as aa, bb, cc, aa, cc -> and check output
 Lab 5- Replace 
           List<String> list =new ArrayList<String>();
