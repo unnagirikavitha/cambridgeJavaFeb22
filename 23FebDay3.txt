@@ -1,3 +1,29 @@
+Lab 10 - 
+	Class BubbleSort{
+		public String[] bsort(String[] input){
+
+			// businesslogic of sort
+		}
+	}
+	-----------
+	Class QuickSort{
+		public String[] qsort(String[] input){
+
+			// businesslogic of sort
+		}
+	}
+	---------------
+	client...
+	main(){
+		String[] arr = {"aa","qq","cc",gg","jj"};
+		BubbleSort bubble = new BubbleSort();
+		bubble.bsort(arr);
+
+		QuickSort quick = new QuickSort();
+		quick.qsort(arr);
+
+	}
+-----------------
 Lab 9 - 
 	interface Talk {
 		public void sayhello();
