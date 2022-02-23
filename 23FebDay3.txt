@@ -1,3 +1,33 @@
+Lab 9 - 
+	interface Talk {
+		public void sayhello();
+	}
+
+	class Dog implements Talk {
+		@Override
+		public void sayhello() {
+			System.out.println("Dog Barks");
+		}
+	}
+
+	class Human implements Talk {
+		@Override
+		public void sayhello() {
+			System.out.println("Human - says Hello");
+		}
+	}
+
+	public class Lab9 {
+		public static void main(String[] args) {
+			Talk t1 = new Dog();
+			t1.sayhello();
+			t1 = new Human();
+			t1.sayhello();
+
+		}
+	}
+
+----------------
 Lab 8 - 
           class Base{
 	public void m1() {
