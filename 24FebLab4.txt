@@ -1,3 +1,22 @@
+Lab 8 - Conver this code for Exception handling (1. Single catch) 2. Multicatch
+	import java.util.Scanner;
+
+	public class Lab8 {
+		public static void main(String[] args) {
+				Scanner scanner = new Scanner(System.in);
+				System.out.print("Enter a String  1 : ");
+				String no1str = scanner.next();
+				System.out.print("Enter String 2 : ");
+				String no2str = scanner.next();
+				int no1 = Integer.parseInt(no1str);
+				int no2 = Integer.parseInt(no2str);
+				System.out.println("Sum = " + (no1 + no2));
+				System.out.println("Division  = " + (no1 / no2));
+
+		}
+	}
+
+
 Lab 7 - multiple catch statements
 	import java.util.InputMismatchException;
 	import java.util.Scanner;
