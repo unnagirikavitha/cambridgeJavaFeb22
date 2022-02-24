@@ -1,4 +1,4 @@
-Lab 2- 
+Lab 4- 
     class Rectangle
     {
       int width
@@ -20,6 +20,78 @@ Lab 2-
     {
       create an instance of Rectangle, pass length, width and invoke draw method
     }
+-----------------------------
+
+Lab3 -
+class Parent{
+	private String sirname;
+
+	@Override
+	public String toString() {
+		return "Parent [sirname=" + sirname + "]";
+	}
+	public String getSirname() {
+		return sirname;
+	}
+	public void setSirname(String sirname) {
+		this.sirname = sirname;
+	}
+	
+}
+
+class Child extends Parent {
+	// No OverRidden
+	private String firstname;
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	@Override
+	public String toString() {
+		System.out.println(super.toString());
+		return "Child [firstname=" + firstname + "]";
+	}
+	
+}
+
+
+public class Lab3 {
+
+	public static void main(String[] args) {
+		/*
+		 * Parent p1 = new Parent(); p1.setSirname("Ayangar"); System.out.println(p1);
+		 */
+		Child c1 = new Child();
+		c1.setSirname("Ayangar");
+		c1.setFirstname("Alee");
+		System.out.println(c1);
+	}
+
+}
+----------------------------
+Lab 2 - 
+class SimpleOverloading {
+	// Method Overloading
+	public void add(int i, int j) {
+		System.out.println("Sum  = " + (i+j));
+	}
+	public void add(int i, int j, int k) {
+		System.out.println("Sum =  " + (i+j+k));
+	}
+}
+public class Lab2 {
+	public static void main(String[] args) {
+		SimpleOverloading so = new SimpleOverloading();
+		so.add(100, 200);
+		so.add(100,200,300);
+	}
+}
+
 
 -----------------------------
 Lab1 - 
