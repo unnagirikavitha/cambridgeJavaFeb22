@@ -1,3 +1,32 @@
+Lab 5- Write one more class SQLConnection (implements Connection)
+	Accept a string from user(sql/ora).
+		if user give sql -> create SQLConnection
+		else
+			OracleConnection
+			
+interface Connection{
+	public void open();
+	public void close();
+}
+class OracleConnection implements Connection{
+	@Override
+	public void open() {
+		System.out.println("OracleConnection - open method is invoked");
+	}
+	@Override
+	public void close() {
+		System.out.println("OracleConnection - close method is invoked");
+	}
+}
+public class Lab5 {
+	public static void main(String[] args) {
+		Connection con = new OracleConnection();
+		con.open();
+		con.close();
+	}
+}
+
+----------------
 Lab 4- 
     class Rectangle
     {
