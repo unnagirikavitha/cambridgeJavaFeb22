@@ -1,4 +1,4 @@
-Lab 1 - class Student -> studentName, marks
+Lab 2 - class Student -> studentName, marks
         class School
            collection of students 
      1. Define class Student
@@ -10,7 +10,7 @@ Lab 1 - class Student -> studentName, marks
           List<Student> list = new ArrayList<Student>();
           write a for loop to add 4 students 
             -> just show list
-           
+  Lab1 -          
       import java.util.ArrayList;
       import java.util.List;
       import java.util.Scanner;
