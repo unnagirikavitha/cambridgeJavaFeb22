@@ -1,3 +1,31 @@
+Lab 5- Static
+	class Simple {
+		int count = 0;
+		String name;
+
+		public Simple(String name) {
+			count++;
+			this.name = name;
+		}
+	}
+
+	public class Lab5 {
+		public static void main(String[] args) {
+			Simple s1 = new Simple("first");
+			System.out.println(s1.name);
+			Simple s2 = new Simple("second");
+			System.out.println(s2.name);
+			Simple s3 = new Simple("third");
+			System.out.println(s3.name);
+			System.out.println("Current Value of Count = " + s1.count);
+		}
+	}
+	Run -> observe count will always be 1. 
+	Modify -> int count = 0 to static int count = 0
+	Run -> observe count will be 3 
+		Also see warning for s1.count and replace it with Simple.count
+
+
 Lab 4 -  Write 
          class BusinessLogic{
                     public void m1() {
