@@ -1,3 +1,32 @@
+Lab 6 - 
+	class Test {
+		public static void check() {
+			System.out.println("Test class - Check ");
+		}
+		public void m1() {
+			System.out.println("m1 of Test");
+		}
+
+		public void m2() {
+			System.out.println("m2 of Test");
+		}
+	}
+
+	public class Lab6 {
+		public static void main(String[] args) {
+			Test.check();
+			Test test = new Test();
+			test.m1();
+			test.m2();
+		}
+	}
+	Invoking static method directly on class (Test.check())
+	Create two variable one static and one instance in Test class
+			static int count = 0;
+			String name;
+	Check which variables can be accessed in m1 method and check method
+
+
 Lab 5- Static
 	class Simple {
 		int count = 0;
