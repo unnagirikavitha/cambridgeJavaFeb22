@@ -1,4 +1,34 @@
-lab3 - 
+Lab 4 -  Write 
+         class BusinessLogic{
+                    public void m1() {
+                            System.out.println("BusinessLogic m1 method...");
+                   }
+         }
+         class MyCode extends BusinessLogic{
+                  @override
+		public void m1() {
+	                  System.out.println("MyCode overrides m1 method");
+	         }        
+               }
+               
+         class Lab4{
+	public static void main(String[] args) {
+		BusinessLogic logic1 = new BusinessLogic();
+		logic1.m1();
+		MyCode mycode =new MyCode();
+		mycode.m1();
+	         }
+         }
+         Will run -> andd m1 from corrosponding classes
+         
+         Stop m1 method from getting overridden -> change m1 method as  final public void m1() 
+         -Observe error in MyCode -> can not override final method m1
+                  -> remove m1 method from MyCode
+                  -> run - in both the cases m1 from BusinessLogic will be invoked....
+         Modify class BusinessLogic as Final
+         -Observe error for deriving from that class
+         
+Lab3 - 
          abstract class Emp{
                 private int empno;
                 private String ename;
