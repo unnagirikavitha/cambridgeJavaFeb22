@@ -1,3 +1,20 @@
+lab3 - 
+         abstract class Emp{
+                private int empno;
+                private String ename;
+                private double salary;
+                public abstract void calcSalary();
+                        + public get/set + toString
+           }
+        Write main method 
+                to create instance of Emp -> Emp e1 = new Emp -> Observe Error
+          
+        Write class ContractEmp
+                class ContractEmp extends Emp{}
+                        -> observe error -> for overriding calcSalary Method
+       Write Lab3 -> main
+        Create instance of ContractEmp and invoked calcSalary method
+
 Lab 2 - class Student -> studentName, marks
         class School
            collection of students 
