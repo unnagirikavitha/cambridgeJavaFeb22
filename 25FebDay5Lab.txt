@@ -1,0 +1,34 @@
+Lab 1 - class Student -> studentName, marks
+        class School
+           collection of students 
+     1. Define class Student
+         private String studentName;
+         private int marks;
+         -------------> Generate getters/setters and toString
+     
+     2. Define class School
+          List<Student> list = new ArrayList<Student>();
+          write a for loop to add 4 students 
+            -> just show list
+           
+      import java.util.ArrayList;
+      import java.util.List;
+      import java.util.Scanner;
+
+      public class Lab1 {
+
+        public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+          List<String> list = new ArrayList<String>();
+          for (int i = 0;i<5;i++) {
+            System.out.println("Enter a String : ");
+            list.add( scanner.next());
+          }
+          System.out.println(list);
+          System.out.println("Enter the String which you want to remove");
+          list.remove(scanner.next());
+
+          System.out.println(list);
+        }
+
+      }
