@@ -1,0 +1,26 @@
+Lab1 - Write Code
+        class Helper {
+        private String name;
+        public Helper(String name) {
+          this.name = name;
+        }
+
+        public void run() {
+          for (int i = 0; i< 100;i++) {
+            System.out.print(name);
+          }
+        }
+      }
+      public class Lab1 {
+        public static void main(String[] args) {
+          Helper h1 = new Helper("-");
+          Helper h2= new Helper("*");
+          h1.run();
+          h2.run();
+
+        }
+      }
+  Run -> - will be printed 100 times and then * 
+  Change the code -> class Helper extends Thread and instead of calling run method (h1.run())-> change this to h1.start() and h2.start()
+  Run -> will observe time slicing (run 4/5 times)
+  
