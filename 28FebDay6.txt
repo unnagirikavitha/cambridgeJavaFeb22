@@ -1,3 +1,18 @@
+Insert ->https://www.w3schools.com/sql/sql_insert.asp
+Select ->https://www.w3schools.com/sql/sql_select.asp with where
+Update ->https://www.w3schools.com/sql/sql_update.asp
+Delete ->https://www.w3schools.com/sql/sql_delete.asp
+-----------------------------------------------
+Asgn1 - 
+        Create a class Dept{
+                private int deptno, 
+                private String dname,
+                private String salary
+                +get/set + toString
+                }
+	Write main method to 
+                Accept these inputs from User and show Dept Object
+-----------------------------------------------
 Lab 3 - import java.util.ArrayList;
         import java.util.List;
 
