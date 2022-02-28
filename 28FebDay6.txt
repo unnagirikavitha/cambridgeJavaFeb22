@@ -30,6 +30,13 @@ Lab 3 - import java.util.ArrayList;
                 1. some times successful execution
                 2. some times wrong size (199, 197 etc)
                 3. some times ArrayIndexOutOfBoundsException exception
+                
+        Modify list.add code to be put in synchronized block    
+                synchronized (list) {
+                           list.add("str"+i);
+                                }
+           Run code - multiple times to observe
+               final size of list 200 
 Lab2 - 
         class Lab2Support1 extends Thread {
 
