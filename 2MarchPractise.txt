@@ -1,0 +1,17 @@
+1 March
+	Run jdbc code (Modify code Emp -> empno, ename, salary)
+		Lab1..Lab5 -> 
+		create table emp (empno numeric primary key, ename varchar(10), salary numeric)
+
+2 March
+	Interfaces and Exception Handling
+		Concepts + Implementation
+		https://www.w3schools.com/java/exercise.asp?filename=exercise_syntax1
+	Interface	
+		Create an interface as Connection with two methods open and close
+		Write 3 classes implementing those interfaces.
+	Exception Handling	
+		try, catch, finally
+		Throw exception 
+		Throws clause
+	Threading -> Read info but practical not needed
