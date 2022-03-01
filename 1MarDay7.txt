@@ -1,0 +1,36 @@
+Lab 1 - Create a table (Demo7 Project -> Lab1.java
+      import java.sql.Connection;
+      import java.sql.DriverManager;
+      import java.sql.SQLException;
+      import java.sql.Statement;
+
+      public class Lab1 {
+
+        // create a table in hsqldb
+      public static void main(String[] args)  {
+
+        try {
+          Class.forName("org.hsqldb.jdbcDriver");
+          System.out.println("class.forName successful");
+          Connection con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/","SA","");
+          System.out.println("Connection established...");	
+          Statement  stmt = con.createStatement();
+          stmt.execute("create table dept (deptno numeric primary key, dname varchar(10), loc varchar(10))");
+          System.out.println("Create table successful");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+     }
+    }
+  Run -> Error , java.lang.ClassNotFoundException: org.hsqldb.jdbcDriver
+  Demo7 -> right click -> properties  -> Java Build Path -> Libraries -> Add External Jars
+      -> C:\work\hsqldb\lib\hsqldb.jar
+  Run -> Error -> java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+      (Database is not running)
+  Windows Exporer-> c:\work\hsqldb\bin\runServer.bat -> this will show cmd prompt (Keep Open)
+  Run -> Successful
+  Windows Exporer-> c:\work\hsqldb\bin\runManager.bat 
+                    Type->HSQL database engine server
+                    -> Refresh -> check dept table
+                   
+  
