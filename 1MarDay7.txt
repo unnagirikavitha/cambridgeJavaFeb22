@@ -1,6 +1,38 @@
+Lab 4 - Write code to delete a record from Table 
+            DELETE FROM dept WHERE deptno=10;
+            MOdify code to accept deptno from user.
+Lab3 -  For reading data from Table 
+            public class Lab3 {
+            public static void main(String[] args)  {
+                        Connection con = null;
+                        Statement stmt = null;
+                        try {
+                                    Class.forName("org.hsqldb.jdbcDriver");
+                                    con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/","SA","");
+                                    stmt = con.createStatement();
+                                    ResultSet rs = stmt.executeQuery("select * from Dept");
+                                    System.out.println("DeptNo \t Dname \t Loc");
+                                    while(rs.next()) {
+                                                System.out.println(rs.getInt(1) + "\t\t" + rs.getString(2) + "\t\t" + rs.getString(3) );
+                                    }
+                        } catch (Exception e) {
+                                                System.out.println(e);
+                        }finally {
+                                    try {
+                                                stmt.close();
+                                                con.close();
+                                    } catch (SQLException e) {
+                                                // TODO Auto-generated catch block
+                                                e.printStackTrace();
+                                    }
+                        }
+
+            }
+            }
+
+
 Lab2 - Write Lab2
             public class Lab2 {
-
                   // insert a row in table 
             public static void main(String[] args)  {
                   Connection con = null;
@@ -9,9 +41,14 @@ Lab2 - Write Lab2
                         Class.forName("org.hsqldb.jdbcDriver");
                         con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/","SA","");
                         stmt = con.createStatement();
-                        int deptno = 20;
-                        String dname="IT";
-                        String loc = "Pnq";
+                        Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter Department Details");
+		System.out.print("Deptno : ");
+		int deptno = scanner.nextInt();
+		System.out.print("Dname : ");
+		String dname=scanner.next();
+		System.out.print("Loc : ");
+		String loc = scanner.next();
                         stmt.execute("INSERT INTO dept VALUES ("+deptno+", '" + dname +"', '"+loc+"')");
                         System.out.println("Inserted");
                   } catch (Exception e) {
