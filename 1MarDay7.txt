@@ -1,3 +1,36 @@
+Lab2 - Write Lab2
+            public class Lab2 {
+
+                  // insert a row in table 
+            public static void main(String[] args)  {
+                  Connection con = null;
+                  Statement stmt = null;
+                  try {
+                        Class.forName("org.hsqldb.jdbcDriver");
+                        con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/","SA","");
+                        stmt = con.createStatement();
+                        int deptno = 20;
+                        String dname="IT";
+                        String loc = "Pnq";
+                        stmt.execute("INSERT INTO dept VALUES ("+deptno+", '" + dname +"', '"+loc+"')");
+                        System.out.println("Inserted");
+                  } catch (Exception e) {
+                              System.out.println(e);
+                  }finally {
+                        try {
+                              stmt.close();
+                              con.close();
+                        } catch (SQLException e) {
+                              // TODO Auto-generated catch block
+                              e.printStackTrace();
+                        }
+                  }
+                 }
+            }
+      Run -> Check the record getting insert in table
+            RunManager -> select * from dept -> check your entry
+      Modify code to accept deptno, dname and loc from user and insert accordingly
+---------------------------
 Lab 1 - Create a table (Demo7 Project -> Lab1.java
       import java.sql.Connection;
       import java.sql.DriverManager;
