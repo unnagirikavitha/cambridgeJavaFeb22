@@ -15,3 +15,41 @@
 		Throw exception 
 		Throws clause
 	Threading -> Read info but practical not needed
+3 March
+Asssignment1	Accept name, age, 2W / 4W from user.
+		if age > 18 -> both the licenses
+		if age > 16 -> 4 w -> show error message saying 4 w lic can only be give above 18
+		if age < 16 - give message- no lic before 16
+		if age > 99 - give message invalid age
+		Validate your input 
+			age should be numeric -> Exception
+			2W/4W should be entered, show exception, stop the execution
+Assignment2    Create a List of integers (fill 10 items in for loop)
+		Show sum of all these numbers 
+	       Create a list of Strings (5 items -> accept input from user)
+	       Show names and lenght of names 
+	       
+Assignment3 
+		Write a class Product
+			int prodno, String prodname, int price
+		Write a class ProductManager {
+			create a list of Product -> List<Product> prod =new ArrayList();
+			
+			public void add(Product p){
+				// add p to list
+			}
+			public void print(){
+				print the arraylist
+			}
+			public void delete (int prodno)
+			{
+				delete prod from list where prodno is matching
+				-> when you delete -> break
+			}
+				
+		}
+		Write main method(in Assignment3)
+			to create 5 products(using add method), print, delete, print
+			
+		
+		
