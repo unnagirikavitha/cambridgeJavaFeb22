@@ -1,0 +1,65 @@
+Lab 3 - Write t2.html
+		<form action="third" method="post">
+		  <label for="username">UserName:</label><br>
+		  <input type="text" id="username" name="username"><br>
+		  <label for="password">Password :</label><br>
+		  <input type="password" id="password" name="password"><br><br>
+		  <input type="submit" value="Click to Check" />
+		</form>
+	Write Third Servlet
+		Modify doPost to include
+				System.out.println("doPost invoked");
+				PrintWriter out  = response.getWriter();
+				String username = request.getParameter("username");
+				String password = request.getParameter("password");
+				if (username.equals(password))
+					out.println("Valid Login");
+				else
+					out.println("InValid Login");
+	Modify index.html to have link to t2.html
+		<h1><a href="t2.html">Accept login and password and check if details are valid</a></h1>
+
+Lab2 - Write t1.html
+		<form action="second">
+		  <label for="fname">First name:</label><br>
+		  <input type="text" id="fname" name="fname"><br>
+		  <label for="lname">Last name:</label><br>
+		  <input type="text" id="lname" name="lname"><br><br>
+		  <input type="submit" value="Click to Check" />
+		</form>
+	Write SecondServlet
+		Modify doGet method
+			String fn = request.getParameter("fname");
+			String ln = request.getParameter("lname");
+			PrintWriter out = response.getWriter();
+			out.println("<H1>Welcome !! " + fn + "  " + ln + "</H1>");
+
+	Modify index.html to provide a hlink for t1.html
+		<h1><a href="t1.html">Accept Firstname and Lastname</a></h1>
+
+Lab1 - File -> New -> Dynamic Web Project
+	demo1
+	Target Runtime - Tomcat 9
+	select - generate web.xml deployment descriptor(DD)
+
+	Create index.html 
+		right click on webapp -> new html page -> index.html
+		add a line
+			<h1>Demo1 - index.html</h1>
+		rightclick on index.html
+			run as -> run on server
+		check browser 
+
+	create servlet -first
+		right click on java -> new -> servlet
+			java package  - demo
+			class name - First
+		Change @WebServlet annotation 
+			from "/First" to "/first"
+
+		Modify doGet method to have 
+			PrintWriter out = response.getWriter();
+			out.println("<H1>First Servlet invoked </H1>");
+		rightclick on first servlet
+			run as -> run on server
+		check browser 
