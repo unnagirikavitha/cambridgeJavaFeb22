@@ -1,0 +1,80 @@
+Lab 6- Create a new project(demo3)
+	index.html -> accept empno, ename, salary give a show button
+		on click on show -> it should call a jsp(show.jsp)=> show a table with emp details(request.getParameter)
+		
+Lab 5 - Modify Simple1 doGet method
+            	// TODO Auto-generated method stub
+		int no1 = Integer.parseInt(request.getParameter("no1"));
+		int no2 = Integer.parseInt(request.getParameter("no2"));
+		String op = request.getParameter("submit");
+		int ans = 0;
+		if (op.equalsIgnoreCase("add"))
+				ans  = no1+no2;
+		else
+				ans = no1-no2;
+		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/output.jsp");
+		request.setAttribute("answer", ans);
+		dispatcher.forward(request, response);
+        Write output.jsp
+            <h1>Output of <%= request.getParameter("submit") %> is 	<%= request.getAttribute("answer") %></h1>
+        Run -> index.html (give input)..    
+Lab 4 - create a new servlet (Simple3)
+            Modify doGet method
+                    // invoke a jsp page
+   		//Option 1 -> New Request -> RoundTrip
+   		//	response.sendRedirect("t3.jsp");
+   		// Option 2 ->  Server-server forward -> url doesnot change
+   		//	RequestDispatcher disp = this.getServletContext().getRequestDispatcher("/t3.jsp");
+   		//	disp.forward(request, response);
+
+            Create t3.jsp
+                    <h1>T3.jsp</h1>
+            Run with option1 and then comment option1 and run option2
+                    Observe the difference in option1 and option2 (url)
+                        
+Lab 3 - t2.jsp 
+          <%
+          out.println(new Date());
+          %>
+        Create a new servlet (Simple3)-> change @WebServlet annotation to /simple3
+        Modify goGet method
+          	response.sendRedirect("t2.jsp");
+       
+       browser -> http://localhost:8080/demo2/simple3
+       
+       Modify t2.jsp
+        <%= new Date() %>
+Lab 2 - Create a new file t1.jsp
+                <h1>In t1.jsp</h1>
+                <h1>
+                <%
+                for (int i = 0;i< 5;i++){
+                     %>
+                     Very
+                     <%} %>
+                Good Afternoon !!!
+                </h1>
+        Run -> t1.jsp
+            and observe - very shown 5 times
+        
+        Write t2.jsp to show 
+            current Date and time (out.println)
+        
+Lab 1- Create a new dynamic web page - demo2
+    create index.html
+      	<h1>Index.html of demo2</h1>
+        <form action="simple1">
+          Number 1 : <input type="number" name="no1" /><br /> Number 2 : <input
+            type="number" name="no2" /><br /> <input type="submit" value="Add"
+            name="submit" /> <input type="submit" value="Sub" name="submit" />
+        </form>
+  Write demo.Simple1 servlet
+    -> modify @WebServlet annoation -> simple1
+    Modify doGet method
+      	PrintWriter out = response.getWriter();
+        out.println("<h1>doGet of Simple1 invoked ...</h1>");
+        // get value of no1 
+        // get value of no2
+        // if submit is add then add no1 and no2 and show
+        //						 sub  -------and show
+ Test
